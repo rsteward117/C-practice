@@ -1,30 +1,24 @@
+//Randy
+//program to convert dollars to euros and vice versa
+
 #include <iostream>
 using namespace std;
 
 int main() {
+    // declare variables for dollars and euros
+	double dollars = 0, euros = 0;
+    double rate = 0.84227;
 
-    string hello = "Hello, World!";
+    // gets the user input
+    cout << "please enter the dollars to convert: " << endl;
+    cin >> dollars;
 
-    cout << hello << endl;
+    // go from dollars to euros
+    euros = dollars * rate;
+        cout << "Converted amount in euros: " << euros << endl;
 
-    // int
-    int number;
-    // this sends output to the console
-    cout << "Enter a number: ";
-    // this gets input from the user
-    cin >> number;
-
-    if(number <= 0){
-        cout << "Please enter a number greater than 0." << endl;
-    }else{
-        // this outputs the value to the console
-    cout << "You entered: " << number << " this is greater than 0." << endl;
-    }
-
-
-
+    // go from euros to dollars
+    dollars = euros / rate;
+        cout << "Converted amount in dollars: " << dollars << endl;
     return 0;
 }
-
-
-
